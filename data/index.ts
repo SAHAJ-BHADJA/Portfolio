@@ -73,6 +73,22 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
+    title: "PixMod",
+    des: "AI-powered SaaS platform using SAM for image segmentation (object removal, recoloring, background removal) and Stable Diffusion for generative tasks like restoration and inpainting. Integrated CLIP enables visual element-based image search, with Stripe for payments.",
+    img: "/img/PixMod.png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "https://pixmod.vercel.app/",
+  },
+  {
+    id: 2,
+    title: "Big Brain",
+    des: "Built an AI-powered document platform with Pinecone, FAISS, Convex, and Clerk, enabling secure uploads, intelligent analysis, real-time summaries, fast vector search, and collaborative discussions in a Shadcn UI.",
+    img: "/img/BigBrain.png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "https://big-brain-pied.vercel.app/",
+  },
+  {
+    id: 3,
     title: "HIMS - Hospital Management System",
     des: "Gujarat State Hospital Management System for managing patient records, billing, scheduling appointments and other hospital management tasks.",
     img: "/img/hims.png",
@@ -80,7 +96,7 @@ export const projects = [
     link: "https://hims-rouge.vercel.app/",
   },
   {
-    id: 2,
+    id: 4,
     title: "FinNexus - Personalized Banking System",
     des: "Personalized banking system for managing accounts, transactions of debit and credit cards, loans, and other banking tasks.",
     img: "/img/FinNexus.png",
@@ -88,7 +104,7 @@ export const projects = [
     link: "https://fin-nexus.vercel.app/",
   },
   {
-    id: 3,
+    id: 5,
     title: "CPU Scheduler",
     des: "Operating System project for simulating CPU scheduling algorithms like FCFS, SJF, SRTF, RR, Priority and Multilevel Queue.",
     img: "/img/CPU.png",
@@ -96,7 +112,7 @@ export const projects = [
     link: "https://cpu-scheduler-amber.vercel.app/",
   },
   {
-    id: 4,
+    id: 6,
     title: "Quantum Resistant Blockchain Technology",
     des: "Proposed a quantum-resistant blockchain framework using FALCON digital signatures and the DPoSB consensus algorithm. DPoSB ensures decentralization by monitoring node behavior and using Borda Count for fair witness node selection, maintaining security and transparency.",
     img: "/img/Quantum.png",

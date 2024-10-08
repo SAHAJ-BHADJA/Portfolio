@@ -2,6 +2,7 @@
 import { FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
+import Image from "next/image";
 
 const RecentProjects = () => {
   // Function to handle the click and navigate to the project link
@@ -15,7 +16,7 @@ const RecentProjects = () => {
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10 w-full max-w-[1200px] mx-auto">
         {projects.map((item) => (
           <div
             // Add onClick function for the entire div
@@ -29,16 +30,20 @@ const RecentProjects = () => {
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img
+                  <Image
                     src="/bg.png"
                     alt="bgimg"
-                    className="w-full h-full object-cover" // Ensures the image covers the container
+                    layout="fill"
+                    objectFit="cover" // Ensures the image covers the container
                   />
                 </div>
-                <img
+
+                <Image
                   src={item.img}
                   alt="cover"
-                  className="z-10 absolute bottom-0 w-full h-full object-cover" // Adjust this image too
+                  layout="fill"
+                  objectFit="cover" // Adjust this image too
+                  className="z-10 absolute bottom-0"
                 />
               </div>
 
